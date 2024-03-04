@@ -32,3 +32,56 @@ for value in [9,41,12,3,74,15]:
     sum = sum + value
     print(count, sum, value)
 print('After:', count, sum, sum / count)
+
+# finding the smallest
+smallest = None
+print('Before')
+for value in [9,41,12,3,74,15]:
+    if smallest is None:
+        smallest = value
+    elif value < smallest:
+        smallest = value
+    print(smallest, value)
+print('After:', smallest)
+
+# 5.1
+num = 0
+tot = 0.0
+while True:
+    sval = input('Enter a number: ')
+    if sval == 'done':
+        break
+    try:
+        fval = float(sval)
+    except:
+        print('Invalid input')
+        continue
+    num = num + 1
+    tot = tot + fval
+print(tot, num, tot / num)
+
+# 5.2
+largest = None
+smallest = None
+
+while True:
+    num = input("Enter a number: ")
+    if num == "done":
+        break
+    try:
+        numF = int(num)
+    except:
+        print('Invalid input')
+        continue
+        
+    if largest is None and smallest is None:
+        largest = numF
+        smallest = numF
+    elif numF > largest:
+            largest = numF
+    elif numF < smallest:
+            smallest = numF
+
+print('Maximum is', largest)
+print('Minimum is', smallest)
+
