@@ -104,3 +104,21 @@ while index < len(fruit) :
     print(s[:2])
     print(s[8:])
     print(s[:])
+
+# Using the in operator
+    fruit = 'banana'
+    'n'in fruit
+    'm' in fruit
+    'nan' in fruit
+    if 'a' in fruit:
+        print('Found it!')
+
+# Parsing and Extracting
+data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+atpos = data.find('@')
+print(atpos)
+sppos = data.find(' ', atpos)
+print(sppos)
+host = data[atpos+1 : sppos]
+print(host)
+    
