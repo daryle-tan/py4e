@@ -20,3 +20,4 @@ print(range(5))
 friends = ["Joe", "Zoe", "Brad", "Angelina", "Zuki", "Thandi", "Paris"] 
 print(len(friends))
 print(list(range(len(friends))))
+
