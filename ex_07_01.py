@@ -27,4 +27,3 @@ for line in fh:
     avg = tot / count
 # compute the average of those values
 print('Average spam confidence:', avg)
-print("Done")
