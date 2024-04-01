@@ -6,7 +6,7 @@
 # Lists can be changed.
 # Lists can be nested.
 # Lists can be indexed.
-# Lists can be concatenated.
+
 lotto = [2, 14, 26, 41, 63]
 lotto[2] = 28
 print(lotto)
@@ -44,3 +44,10 @@ while True:
     numlist.append(value)
 average = sum(numlist) / len(numlist)
 print('Average:', average)
+
+# Lists can be concatenated.
+a = [1, 2, 3]
+b= [4,5,6]
+c = a + b
+print(c)
+print(b)
