@@ -51,3 +51,24 @@ b= [4,5,6]
 c = a + b
 print(c)
 print(b)
+
+# Strings and lists
+abc = 'We are family'
+together = split(abc)
+print(together)
+print(len(together))
+
+# Splitting a string on a specific character
+line = ['first;second;third']
+thing = line.split(';')
+print(thing)
+
+# Split breaks a string into parts and produces a list of strings. We think of these as words. We can access a particular word or loop through all the words.
+abc = 'With three words'
+stuff = abc.split()
+print(stuff) # ['With', 'three', 'words']
+print(len(stuff)) # 3
+print(stuff[1]) # three
+
+for w in stuff:
+    print(w)
