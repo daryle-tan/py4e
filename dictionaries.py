@@ -42,3 +42,39 @@ for key in counts:
     else:
         counts[key] = counts[key] + 1
 print(counts) # {'chuck': 2, 'annie': 2, 'jan': 2}
+
+# counting pattern
+counts = dict()
+print('Enter a line of text:')
+line = input('')
+
+words = line.split()
+
+print('Words:', words)
+
+print('Counting...')
+for word in words:
+    counts[word] = counts.get(word, 0) + 1
+print('Counts', counts)
+
+# Two iteration variables
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+for key,value in counts.items():
+    print(key, value)
+
+# histogram and finding the most common word
+name = input('Enter file:')
+handle = open(name)
+
+counts = dict() # create a dictionary
+for line in handle: # iterate through the file
+    words = line.split() # split the line into a list of words
+    for word in words: # iterate through the list of words
+        counts[word] = counts.get(word, 0) + 1 # create a histogram of the words
+
+bigcount = None
+bigword = None
+for word,count in counts.items(): # iterate through the dictionary
+    if bigcount is None or count > bigcount: # if the count is greater than the bigcount
+        bigword = word # assign the word to bigword
+        bigcount = count # assign the count to bigcount
